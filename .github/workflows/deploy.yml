@@ -16,6 +16,5 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
-          host_fingerprint: ""
           script: |
-            rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" /github/workspace/ /var/www/ourplanetproject.com/
+            cd /var/www/ourplanetproject.com && git pull origin main
