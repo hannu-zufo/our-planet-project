@@ -16,5 +16,6 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
+          host_fingerprint: ""
           script: |
-            rsync -avz --delete ${{ github.workspace }}/ ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/ourplanetproject.com/
+            rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" /github/workspace/ /var/www/ourplanetproject.com/
