@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Author | Our Planet Project Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="editorial-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link"><img src="images/logo.png" alt="Our Planet Project Foundation" class="nav-logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Thesis</a></li>
+                <li><a href="evidence.html">Evidence</a></li>
+                <li><a href="strategy.html">Strategy</a></li>
+                <li><a href="author.html" class="active">The Author</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="author.html#contact" class="btn-policy">Policy Inquiry</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="evidence-header">
+        <div class="container">
+            <span class="section-label">Scholar &amp; Principal Investigator</span>
+            <h1>John Ward</h1>
+        </div>
+    </header>
+
+    <main class="container monograph-grid">
+        <article class="prose-block">
+            <span class="section-label">Biography</span>
+            <h2>The Scholar Behind the Thesis</h2>
+            <p><span class="dropcap">J</span>ohn Ward has dedicated his career to the intersection of atmospheric science and global security policy. His foundational argument — that the stability of nuclear deterrence is a statistical illusion rather than a verified condition — has informed legislative briefings, academic curricula, and international treaty discussions across three continents.</p>
+
+            <p>Ward holds a doctorate in Atmospheric and Oceanic Sciences from Princeton University and completed post-doctoral research at the Stockholm International Peace Research Institute (SIPRI). Prior to founding the Our Planet Project Foundation, he served as a senior consultant to the United Nations Office for Disarmament Affairs, where he contributed to technical assessments of radiological risk under the Non-Proliferation Treaty framework.</p>
+
+            <p>His seminal monograph, <em>Rolling the Dice: The Statistical Case Against Nuclear Deterrence</em>, synthesizes two decades of archival research with contemporary climate modeling to construct what peer reviewers at <em>Nature</em> have called "the most rigorous probabilistic analysis of nuclear near-miss events yet published." The work has been adopted as core curriculum at several leading security studies programs and military academies.</p>
+
+            <span class="section-label" style="margin-top:40px;">Selected Publications</span>
+            <h2>Academic Record</h2>
+
+            <div class="publication-list">
+                <div class="publication-item">
+                    <p class="pub-title"><em>Rolling the Dice: The Statistical Case Against Nuclear Deterrence</em></p>
+                    <p class="pub-meta">Monograph — Our Planet Project Foundation Press, 2024</p>
+                </div>
+                <div class="publication-item">
+                    <p class="pub-title">"Stratospheric Soot Loading and Agricultural Collapse: A Revised 3D Aerosol Model"</p>
+                    <p class="pub-meta"><em>Nature Climate Change</em>, Vol. 14, 2023 — co-authored with Dr. Yuki Tanaka, MIT</p>
+                </div>
+                <div class="publication-item">
+                    <p class="pub-title">"Archival Evidence and the Illusion of Command and Control: Case Studies from 1956–1995"</p>
+                    <p class="pub-meta"><em>International Security</em>, Vol. 47, No. 3, 2022</p>
+                </div>
+                <div class="publication-item">
+                    <p class="pub-title">"The Petrov Variables: Human Error, Protocol Override, and Systemic Fragility"</p>
+                    <p class="pub-meta"><em>Bulletin of the Atomic Scientists</em>, September 2021</p>
+                </div>
+                <div class="publication-item">
+                    <p class="pub-title">"Municipal Governance as a Vector for Federal Existential Risk Policy"</p>
+                    <p class="pub-meta"><em>Journal of Policy Analysis and Management</em>, Vol. 39, 2020</p>
+                </div>
+            </div>
+
+            <span class="section-label" style="margin-top:40px;">Affiliations</span>
+            <h2>Institutional Roles</h2>
+            <p>Ward is a Senior Fellow at the Our Planet Project Foundation, a non-partisan research and advocacy organization dedicated to translating existential risk scholarship into durable policy. He serves on the advisory board of the Federation of American Scientists and is a recurring invited lecturer at the Harvard Kennedy School's Belfer Center for Science and International Affairs. He has testified before the United States Senate Foreign Relations Committee and addressed sessions of the United Nations General Assembly First Committee.</p>
+        </article>
+
+        <aside class="sidebar-abstract">
+            <div class="sticky-sidebar">
+                <img src="images/author.jpg" class="research-img" alt="John Ward, Principal Investigator">
+                <p class="figure-caption" style="margin-top: 12px;"><strong>John Ward</strong><br>Founder &amp; Principal Investigator<br>Our Planet Project Foundation</p>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-inner">
+                <div class="contact-intro">
+                    <span class="section-label">Policy Inquiry</span>
+                    <h2>Get in Touch</h2>
+                    <p>The Foundation welcomes correspondence from policymakers, academic institutions, journalists, and security analysts. Whether you are seeking to discuss the research, request a briefing, or explore curriculum adoption, please use the form to initiate contact.</p>
+                    <p>For media inquiries, please include your outlet and deadline in your message. For academic collaboration, please attach a brief statement of your institutional affiliation and the nature of the proposed work.</p>
+                </div>
+                <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name">Full Name</label>
+                            <input type="text" id="contact-name" name="name" placeholder="Dr. Jane Smith" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-org">Institution / Organization</label>
+                            <input type="text" id="contact-org" name="organization" placeholder="Harvard Kennedy School">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email Address</label>
+                        <input type="email" id="contact-email" name="email" placeholder="jsmith@university.edu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-type">Nature of Inquiry</label>
+                        <select id="contact-type" name="inquiry_type">
+                            <option value="">Select a category</option>
+                            <option value="policy">Policy Briefing Request</option>
+                            <option value="academic">Academic Collaboration</option>
+                            <option value="curriculum">Curriculum Adoption</option>
+                            <option value="media">Media / Press</option>
+                            <option value="other">General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="5" placeholder="Please describe the nature of your inquiry..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit Inquiry</button>
+                    <p class="form-note">The Foundation endeavors to respond to all inquiries within five business days.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer"><p>&copy; 2026 Our Planet Project Foundation</p></footer>
+    <script src="js/site.js"></script>
+</body>
+</html>
