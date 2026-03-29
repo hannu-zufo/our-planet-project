@@ -1,8 +1,9 @@
-name: Deploy
+name: Deploy OPP
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -10,11 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          echo "76.13.61.27 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO0dnaoulC1nlI4Rm0iIaILcF4i7P2AmdCLyOxKjSwBr" >> ~/.ssh/known_hosts
+
       - name: Deploy to VPS
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
-          script: |
-            cd /var/www/ourplanetproject.com && git pull origin main
+        run: rsync -avz --delete -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no" ./ root@76.13.61.27:/var/www/ourplanetproject.com/
