@@ -6,7 +6,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 }
 
 // Credentials config - override defaults here
-define('ADMIN_USERNAME', 'admin');
+define('ADMIN_USERNAME', 'xkqmvp');
 define('ADMIN_PASSWORD_HASH', password_hash('changeme123', PASSWORD_DEFAULT));
 
 // Path to blog posts directory (relative to this file's parent)
