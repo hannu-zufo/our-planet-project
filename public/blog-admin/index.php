@@ -13,17 +13,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = trim($_POST['username'] ?? '');
     $password = $_POST['password'] ?? '';
 
-    // Credentials - change these
-    $valid_username = 'admin';
-    $valid_password_hash = password_hash('changeme123', PASSWORD_DEFAULT);
-
     // Store hash in a config file if it doesn't exist
     $config_file = __DIR__ . '/config.php';
     if (file_exists($config_file)) {
         require $config_file;
     }
 
-    if ($username === $valid_username && password_verify($password, $valid_password_hash)) {
+    if ($username === 'xkqmvp' && password_verify($password, '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi')) {
         $_SESSION['logged_in'] = true;
         $_SESSION['username'] = $username;
         header('Location: dashboard.php');

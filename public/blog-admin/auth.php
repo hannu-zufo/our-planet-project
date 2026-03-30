@@ -5,12 +5,8 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     exit;
 }
 
-// Credentials config - override defaults here
 define('ADMIN_USERNAME', 'xkqmvp');
-define('ADMIN_PASSWORD_HASH', password_hash('changeme123', PASSWORD_DEFAULT));
+define('ADMIN_PASSWORD_HASH', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');
 
-// Path to blog posts directory (relative to this file's parent)
 define('POSTS_DIR', dirname(__DIR__) . '/blog/posts/');
 define('BLOG_INDEX', dirname(__DIR__) . '/blog/index.html');
-define('BLOG_CSS_PATH', '../../css/style.css');
-define('BLOG_CSS_BLOG_PATH', '../../css/blog.css');
