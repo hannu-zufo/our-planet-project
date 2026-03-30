@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = trim($_POST['username'] ?? '');
     $password = $_POST['password'] ?? '';
 
-    if ($username === 'xkqmvp' && $password === 'changeme123') {
+    if ($username === 'xkqmvp' && $password === 'pqQEXxBN7Wx2gK') {
         $_SESSION['logged_in'] = true;
         $_SESSION['username'] = $username;
         header('Location: dashboard.php');
