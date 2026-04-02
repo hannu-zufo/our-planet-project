@@ -50,7 +50,7 @@ p { margin: 0 0 1.2rem; color: #333; font-size: 1rem; }
 
 .section-label { text-transform: uppercase; color: var(--accent); font-weight: 800; font-size: 0.7rem; letter-spacing: 2px; margin-bottom: 10px; display: block; }
 .eyebrow { text-transform: uppercase; color: rgba(255,255,255,0.6); font-weight: 700; font-size: 0.7rem; letter-spacing: 2px; margin-bottom: 10px; display: block; }
-.dropcap { float: left; font-family: var(--serif); font-size: 4.5rem; line-height: 0.8; margin-right: 12px; color: var(--accent); }
+.dropcap { float: left; font-family: var(--serif); font-size: 3.5rem; line-height: 0.8; margin-right: 12px; color: var(--accent); }
 
 /* Inline link */
 .inline-link { color: var(--accent); text-decoration: none; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
