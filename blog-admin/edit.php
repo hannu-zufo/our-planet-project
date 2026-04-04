@@ -204,7 +204,7 @@ HTML;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $is_new ? 'New Post' : 'Edit Post'; ?> | Blog Admin</title>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script src="https://cdn.tiny.cloud/1/ltqlue7zlrwe8q7r736f2r80fn9lrk31fxuu99922nesulne/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
     <style>
         :root { --ink:#1a1a1a; --paper:#fdfcfb; --accent:#A14068; --border:#e5e5e5; --serif:'Libre Baskerville',serif; --sans:'Inter',sans-serif; }
         * { box-sizing:border-box; margin:0; padding:0; }
