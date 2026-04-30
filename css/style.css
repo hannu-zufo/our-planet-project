@@ -76,8 +76,16 @@ p { margin: 0 0 1.2rem; color: #333; font-size: 1rem; }
 .evidence-header { background: #f4f1ea; padding: 100px 0; text-align: center; }
 
 /* Footer */
-.site-footer { border-top: 1px solid var(--border); padding: 30px 0; text-align: center; }
-.site-footer p { font-size: 0.78rem; color: var(--grey); margin: 0; }
+.site-footer { background: #1e3d5c; }
+.footer-main { padding: 60px 0 50px; }
+.footer-logo { height: 80px; width: auto; display: block; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.15); padding: 18px 0; }
+.footer-bottom-inner { display: flex; justify-content: space-between; align-items: center; }
+.footer-copy { font-size: 0.65rem; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.5px; }
+.footer-privacy { font-size: 0.65rem; color: rgba(255,255,255,0.55); text-decoration: none; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; transition: color 0.2s; }
+.footer-privacy:hover { color: #fff; }
+.footer-social { color: rgba(255,255,255,0.55); display: flex; align-items: center; transition: color 0.2s; }
+.footer-social:hover { color: #fff; }
 
 /* Lightbox Overlay */
 #lightbox { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 2000; display: none; justify-content: center; align-items: center; cursor: zoom-out; }
