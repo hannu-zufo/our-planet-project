@@ -37,24 +37,43 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // --- Contact Form Handler ---
-function handleContactSubmit(e) {
+async function handleContactSubmit(e) {
     e.preventDefault();
     const form = e.target;
     const btn = form.querySelector('.btn-submit');
-
-    // Simple confirmation — replace with actual endpoint integration as needed
-    btn.textContent = 'Inquiry Sent';
-    btn.disabled = true;
-    btn.style.background = '#555';
-
     const note = form.querySelector('.form-note');
-    if (note) {
-        note.textContent = 'Thank you. The Foundation will be in touch within five business days.';
-        note.style.color = 'rgba(255,255,255,0.65)';
-    }
 
-    form.querySelectorAll('input, select, textarea').forEach(el => {
-        el.disabled = true;
-        el.style.opacity = '0.5';
-    });
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+
+    const data = Object.fromEntries(new FormData(form));
+
+    try {
+        const res = await fetch('https://submit-form.com/Z0lu9puvw', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(data)
+        });
+
+        if (res.ok) {
+            btn.textContent = 'Inquiry Sent';
+            btn.style.background = '#555';
+            if (note) {
+                note.textContent = 'Thank you. The Foundation will be in touch within five business days.';
+                note.style.color = 'rgba(255,255,255,0.65)';
+            }
+            form.querySelectorAll('input, select, textarea').forEach(el => {
+                el.disabled = true;
+                el.style.opacity = '0.5';
+            });
+        } else {
+            btn.textContent = 'Submit Inquiry';
+            btn.disabled = false;
+            if (note) note.textContent = 'Submission failed — please try again or email contact@ourplanetproject.com';
+        }
+    } catch (err) {
+        btn.textContent = 'Submit Inquiry';
+        btn.disabled = false;
+        if (note) note.textContent = 'Submission failed — please try again or email contact@ourplanetproject.com';
+    }
 }
