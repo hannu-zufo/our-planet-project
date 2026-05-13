@@ -8,7 +8,7 @@ PROMO = """
     <aside class="book-promo">
         <div class="book-promo-inner">
             <a href="../../rolling-the-dice.html" class="book-promo-cover">
-                <img src="../../images/rollingff.png" alt="Rolling the Dice with Nuclear Weapons by John Ward" loading="lazy">
+                <img src="../../static/images/rollingff.webp" alt="Rolling the Dice with Nuclear Weapons by John Ward" loading="lazy">
             </a>
             <div class="book-promo-text">
                 <span class="section-label">From the Author</span>

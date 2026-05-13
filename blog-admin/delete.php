@@ -71,7 +71,7 @@ function regenerate_index_standalone() {
   "publisher": {
     "@type": "Organization",
     "name": "Our Planet Project Foundation",
-    "logo": "https://ourplanetproject.com/images/logo.png"
+    "logo": "https://ourplanetproject.com/static/images/logo.webp"
   }
 }
     </script>
@@ -79,7 +79,7 @@ function regenerate_index_standalone() {
 <body>
     <nav class="editorial-nav">
         <div class="nav-container">
-            <a href="../index.html" class="logo-link"><img src="../images/logo.png" alt="Logo" class="nav-logo"></a>
+            <a href="../index.html" class="logo-link"><img src="../static/images/logo.webp" alt="Logo" class="nav-logo"></a>
             <ul class="nav-links">
                 <li><a href="../index.html">Thesis</a></li>
                 <li><a href="../rolling-the-dice.html">The Book</a></li>
@@ -106,7 +106,7 @@ function regenerate_index_standalone() {
     <aside class="book-promo">
         <div class="book-promo-inner">
             <a href="../rolling-the-dice.html" class="book-promo-cover">
-                <img src="../images/rollingff.png" alt="Rolling the Dice with Nuclear Weapons by John Ward" loading="lazy">
+                <img src="../static/images/rollingff.webp" alt="Rolling the Dice with Nuclear Weapons by John Ward" loading="lazy">
             </a>
             <div class="book-promo-text">
                 <span class="section-label">From the Author</span>
