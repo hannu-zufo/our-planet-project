@@ -86,10 +86,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a href="../../index.html" class="logo-link"><img src="../../static/images/logo.webp" alt="Logo" class="nav-logo"></a>
             <ul class="nav-links">
                 <li><a href="../../index.html">Thesis</a></li>
-                <li><a href="../../rolling-the-dice.html">The Book</a></li>
                 <li><a href="../../evidence.html">Evidence</a></li>
                 <li><a href="../../strategy.html">Strategy</a></li>
-                <li><a href="../../author.html">The Scholar</a></li>
+                <li><a href="../../author.html">The Author</a></li>
+                <li><a href="../../rolling-the-dice.html">The Book</a></li>
                 <li><a href="../index.html" class="active">Blog</a></li>
                 <li><a href="../../author.html#contact">Contact</a></li>
             </ul>
@@ -215,10 +215,10 @@ function regenerate_index() {
             <a href="../index.html" class="logo-link"><img src="../static/images/logo.webp" alt="Logo" class="nav-logo"></a>
             <ul class="nav-links">
                 <li><a href="../index.html">Thesis</a></li>
-                <li><a href="../rolling-the-dice.html">The Book</a></li>
                 <li><a href="../evidence.html">Evidence</a></li>
                 <li><a href="../strategy.html">Strategy</a></li>
-                <li><a href="../author.html">The Scholar</a></li>
+                <li><a href="../author.html">The Author</a></li>
+                <li><a href="../rolling-the-dice.html">The Book</a></li>
                 <li><a href="index.html" class="active">Blog</a></li>
                 <li><a href="../author.html#contact">Contact</a></li>
             </ul>
