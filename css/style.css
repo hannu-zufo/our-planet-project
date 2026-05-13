@@ -44,6 +44,13 @@ body { background-color: var(--paper); color: var(--ink); margin: 0; font-family
 
 /* Typography */
 h1 { font-family: var(--serif); font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin: 0; }
+/* Author page: single in-article <h1> uses former h2 scale */
+h1.article-lead-heading {
+    font-size: 1.8rem;
+    line-height: 1.25;
+    margin: 0 0 1rem;
+    font-weight: 400;
+}
 h2 { font-family: var(--serif); font-size: 1.8rem; line-height: 1.25; margin: 0 0 1rem; }
 h3 { font-family: var(--sans); font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; margin: 2rem 0 0.5rem; color: var(--ink); }
 p { margin: 0 0 1.2rem; color: #333; font-size: 1rem; }
@@ -74,6 +81,14 @@ p { margin: 0 0 1.2rem; color: #333; font-size: 1rem; }
 .strategy-header { background: var(--ink); color: #fff; padding: 100px 0; text-align: center; }
 .strategy-header h1 { color: #fff; }
 .evidence-header { background: #f4f1ea; padding: 100px 0; text-align: center; }
+/* Display name in author masthead (single <h1> reserved for in-article title) */
+.evidence-header .author-hero-name {
+    font-family: var(--serif);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+    margin: 0;
+    color: var(--ink);
+}
 
 /* Footer */
 .site-footer { background: #1e3d5c; }
