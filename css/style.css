@@ -274,7 +274,7 @@ p { margin: 0 0 1.2rem; color: #333; font-size: 1rem; }
 }
 
 /* ── The Book page ─────────────────────────────────────────────────── */
-.book-hero { background: var(--ink); color: #fff; padding: 72px 0 80px; }
+.book-hero { background: #ececec; color: #000; padding: 72px 0 80px; }
 .book-hero-inner {
     max-width: 1100px;
     margin: 0 auto;
@@ -290,11 +290,10 @@ p { margin: 0 0 1.2rem; color: #333; font-size: 1rem; }
     height: auto;
     display: block;
     margin: 0 auto;
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
-    border-radius: 2px;
+    background: transparent;
 }
 .book-hero-copy h1 {
-    color: #fff;
+    color: #000;
     margin-bottom: 0.75rem;
     font-size: clamp(1.75rem, 3.5vw, 2.75rem);
     line-height: 1.15;
@@ -303,7 +302,7 @@ p { margin: 0 0 1.2rem; color: #333; font-size: 1rem; }
     font-family: var(--serif);
     font-style: italic;
     font-size: clamp(1.05rem, 2vw, 1.35rem);
-    color: rgba(255, 255, 255, 0.88);
+    color: #000;
     margin: 0 0 0.5rem;
     line-height: 1.4;
 }
@@ -315,7 +314,7 @@ p { margin: 0 0 1.2rem; color: #333; font-size: 1rem; }
     color: var(--accent);
     margin: 0 0 1.25rem;
 }
-.book-hero-copy p { color: rgba(255, 255, 255, 0.78); }
+.book-hero-copy p { color: #000; }
 .book-hero-lead { font-size: 1.05rem; }
 .book-list { margin: 0 0 1.2rem 1.1rem; padding: 0; color: #333; }
 .book-list li { margin-bottom: 0.55rem; }
@@ -378,8 +377,7 @@ p { margin: 0 0 1.2rem; color: #333; font-size: 1rem; }
     height: auto;
     display: block;
     margin: 0 auto;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
-    border-radius: 2px;
+    background: transparent;
 }
 .home-book-promo-copy .section-label { margin-bottom: 12px; }
 .home-book-promo-copy h2 {
